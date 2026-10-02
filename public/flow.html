@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flow – Don't type, just speak</title>
+  <meta name="description" content="Voice dictation landing page clone – speak naturally and get polished writing in every app.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./flow.css">
+</head>
+
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="logo" aria-label="Flow home">
+        <span class="logo__mark" aria-hidden="true">
+          <i></i><i></i><i></i><i></i>
+        </span>
+        <span class="logo__text">Flow</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#features">Product <span class="caret">▾</span></a>
+        <a href="#made-for-you">Individuals <span class="caret">▾</span></a>
+        <a href="#devices">Business</a>
+        <a href="#start">Pricing</a>
+        <a href="#footer">About <span class="caret">▾</span></a>
+      </nav>
+
+      <a href="#start" class="btn btn--lilac btn--sm nav__cta">
+        <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.8-3-.8C6.9 7.3 5.4 8.2 4.6 9.6c-1.7 2.9-.4 7.2 1.2 9.6.8 1.2 1.7 2.4 3 2.4 1.2 0 1.6-.8 3-.8s1.8.8 3 .8 2-1.2 2.8-2.3c.9-1.3 1.2-2.6 1.3-2.6-.1 0-2.5-1-2.5-4.1zM14.1 5.5c.6-.8 1.1-1.8 1-2.9-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1 .1 2.1-.5 2.7-1.3z"/></svg>
+        Download for macOS
+      </a>
+
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <h1 class="display hero__title reveal">Don't type, <em>just speak</em></h1>
+      <p class="hero__sub reveal">The voice-to-text AI that turns speech into clear, polished writing in every app.</p>
+      <div class="hero__actions reveal">
+        <a href="#start" class="btn btn--lilac">
+          <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.8-3-.8C6.9 7.3 5.4 8.2 4.6 9.6c-1.7 2.9-.4 7.2 1.2 9.6.8 1.2 1.7 2.4 3 2.4 1.2 0 1.6-.8 3-.8s1.8.8 3 .8 2-1.2 2.8-2.3c.9-1.3 1.2-2.6 1.3-2.6-.1 0-2.5-1-2.5-4.1zM14.1 5.5c.6-.8 1.1-1.8 1-2.9-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1 .1 2.1-.5 2.7-1.3z"/></svg>
+          Download for macOS
+        </a>
+        <small>Available on Mac, Windows and iPhone</small>
+      </div>
+
+      <div class="hero__wave">
+        <svg viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <path id="wavePath" d="M-40 60 C 260 40, 420 230, 720 190 S 1180 60, 1500 40" />
+          </defs>
+          <use href="#wavePath" class="wave__line" />
+          <text class="wave__text">
+            <textPath href="#wavePath" id="waveText" startOffset="0%">
+              umm so I was thinking maybe we could like, you know, push the meeting to thursday? and also remind sarah about the deck… actually wait, friday works better —
+              &#160;&#160;&#160;&#160;
+              Let's move the meeting to Friday. Also, remind Sarah about the deck.
+              &#160;&#160;&#160;&#160;
+              umm so I was thinking maybe we could like, you know, push the meeting to thursday? and also remind sarah about the deck…
+            </textPath>
+          </text>
+        </svg>
+        <div class="hero__pill">
+          <span class="pill-dot"></span>
+          <span>Hold <kbd>fn</kbd> to speak</span>
+        </div>
+        <div class="hero__mic" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ANY APP / DEVICE ============ -->
+    <section class="dark-card apps" id="devices">
+      <div class="apps__grid">
+        <div class="apps__copy reveal">
+          <div class="tags">
+            <span class="tag tag--dark"> Mac</span>
+            <span class="tag tag--dark">⊞ Windows</span>
+            <span class="tag tag--dark">▯ iPhone</span>
+          </div>
+          <h2 class="display h2 light">Write faster in all your apps, on any device</h2>
+          <p class="muted-light">Seamless speech-to-text in every application on your iPhone or computer.</p>
+          <a href="#start" class="btn btn--cream btn--sm">Learn more</a>
+        </div>
+
+        <div class="phone reveal">
+          <div class="phone__notch"></div>
+          <div class="phone__head">
+            <div class="avatar avatar--sm" style="--h:28"></div>
+            <span>Kyle</span>
+          </div>
+          <div class="bubble bubble--in">Are we still on for dinner tonight?</div>
+          <div class="bubble bubble--out">Yes! Running 10 mins late though, save me a seat 🙏</div>
+          <div class="bubble bubble--in">No worries. I'll order the dumplings.</div>
+          <div class="bubble bubble--out typing" id="phoneTyping"></div>
+          <div class="phone__wave">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-orbit" aria-hidden="true">
+        <span style="--i:0;--c:#f6c445">✉️</span>
+        <span style="--i:1;--c:#4b8bf5">💬</span>
+        <span style="--i:2;--c:#6e5ef0">📝</span>
+        <span style="--i:3;--c:#e8eaf0">📅</span>
+        <span style="--i:4;--c:#2b2d33">⌘</span>
+        <span style="--i:5;--c:#d8f1ff">🌐</span>
+        <span style="--i:6;--c:#ff7a59">📮</span>
+        <span style="--i:7;--c:#ffd84d">🗒️</span>
+        <span style="--i:8;--c:#57c26b">📞</span>
+        <span style="--i:9;--c:#ffffff">🎨</span>
+        <span style="--i:10;--c:#ffe0f0">🧠</span>
+        <span style="--i:11;--c:#c9f2c7">📊</span>
+      </div>
+    </section>
+
+    <!-- ============ TRUSTED BY ============ -->
+    <section class="trusted">
+      <div class="trusted__mascot" aria-hidden="true">
+        <svg viewBox="0 0 160 140">
+          <ellipse cx="80" cy="128" rx="60" ry="8" fill="#0f2d22" opacity=".5"/>
+          <path d="M30 120 C 30 80, 130 80, 130 120 Z" fill="#f2e7d5"/>
+          <circle cx="80" cy="60" r="30" fill="#f4b183"/>
+          <path d="M50 52 C 50 20, 110 20, 110 52 C 104 40, 92 34, 80 40 C 70 34, 58 40, 50 52 Z" fill="#c4572b"/>
+          <circle cx="70" cy="62" r="3" fill="#1b1b1b"/>
+          <circle cx="90" cy="62" r="3" fill="#1b1b1b"/>
+          <path d="M72 74 Q 80 80 88 74" stroke="#1b1b1b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M112 70 l 20 -14 M114 78 l 24 -4 M112 86 l 20 8" stroke="#ffd36e" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p class="trusted__title">Used by professionals everywhere to speed up their thoughts</p>
+      <div class="marquee">
+        <div class="marquee__track">
+          <span class="brand brand--bold">OpenAI</span>
+          <span class="brand brand--lower">mailchimp</span>
+          <span class="brand brand--serif">substack</span>
+          <span class="brand brand--bold">amazon</span>
+          <span class="brand brand--lower">● vercel</span>
+          <span class="brand brand--caps">SUPERHUMAN</span>
+          <span class="brand brand--serif">Notion</span>
+          <span class="brand brand--bold">Replit</span>
+          <!-- duplicated for seamless loop -->
+          <span class="brand brand--bold" aria-hidden="true">OpenAI</span>
+          <span class="brand brand--lower" aria-hidden="true">mailchimp</span>
+          <span class="brand brand--serif" aria-hidden="true">substack</span>
+          <span class="brand brand--bold" aria-hidden="true">amazon</span>
+          <span class="brand brand--lower" aria-hidden="true">● vercel</span>
+          <span class="brand brand--caps" aria-hidden="true">SUPERHUMAN</span>
+          <span class="brand brand--serif" aria-hidden="true">Notion</span>
+          <span class="brand brand--bold" aria-hidden="true">Replit</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4X FASTER ============ -->
+    <section class="faster">
+      <h2 class="display h2 center reveal">4x faster than typing</h2>
+      <p class="center narrow reveal">After 150 years of using the same keyboard, voice that actually works is finally here. When you speak, your words flow at 220 words per minute — Flow keeps up and turns your thoughts into text instantly.</p>
+      <div class="center-actions reveal">
+        <a href="#start" class="btn btn--outline btn--sm">Try Flow</a>
+        <a href="#start" class="btn btn--lilac btn--sm">Download for macOS</a>
+      </div>
+
+      <div class="compare reveal">
+        <div class="compare__side compare__side--key">
+          <span class="compare__label">Keyboard</span>
+          <span class="compare__wpm"><b id="keyWpm">45</b> wpm</span>
+          <div class="compare__text compare__text--slow">
+            <span id="keyText"></span><i class="caret-blink"></i>
+          </div>
+        </div>
+        <div class="compare__side compare__side--flow">
+          <span class="compare__label">Flow</span>
+          <span class="compare__wpm"><b id="flowWpm">220</b> wpm</span>
+          <div class="compare__text compare__text--fast">
+            <span id="flowText"></span><i class="caret-blink"></i>
+          </div>
+          <button class="mic-btn" id="micBtn" aria-label="Replay demo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12h-2z"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MADE FOR YOU ============ -->
+    <section class="dark-card made" id="made-for-you">
+      <div class="made__grid">
+        <div class="reveal">
+          <h2 class="display h1 light">Flow is made <br><em>for you</em></h2>
+          <div class="chips" id="roleChips">
+            <button class="chip is-active">Leaders</button>
+            <button class="chip">Consultants</button>
+            <button class="chip">Creators</button>
+            <button class="chip">Customer Support</button>
+            <button class="chip">Designers</button>
+            <button class="chip">Engineers</button>
+            <button class="chip">Educators</button>
+            <button class="chip">Freelancers</button>
+            <button class="chip">Healthcare</button>
+            <button class="chip">Lawyers</button>
+            <button class="chip">Marketers</button>
+            <button class="chip">Product</button>
+            <button class="chip">Recruiters</button>
+            <button class="chip">Sales</button>
+            <button class="chip">Students</button>
+            <button class="chip">Writers</button>
+          </div>
+        </div>
+
+        <div class="made__access reveal">
+          <div class="mascot-card" aria-hidden="true">
+            <svg viewBox="0 0 200 160">
+              <rect x="40" y="70" width="130" height="70" rx="14" fill="#f2e7d5" transform="rotate(-6 100 100)"/>
+              <path d="M62 104 q 10 -14 20 0 t 20 0 t 20 0 t 20 0" stroke="#8a5cf6" stroke-width="4" fill="none" stroke-linecap="round" transform="rotate(-6 100 100)"/>
+              <circle cx="128" cy="44" r="26" fill="#d9c8ff"/>
+              <circle cx="120" cy="42" r="3" fill="#1b1b1b"/>
+              <circle cx="136" cy="42" r="3" fill="#1b1b1b"/>
+              <path d="M120 52 Q128 58 136 52" stroke="#1b1b1b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M106 26 l -8 -10 M150 26 l 8 -10" stroke="#d9c8ff" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="display h3 light">Flow for Accessibility</h3>
+          <p class="muted-light" id="roleCopy">Your voice deserves a shortcut. Flow supports anyone who finds the keyboard slow, painful or exhausting. Speak naturally and Flow turns your thoughts into clean, polished text — no strain, no friction.</p>
+          <a href="#start" class="btn btn--lilac btn--sm">Download for macOS</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features" id="features">
+
+      <!-- AI Auto Edits -->
+      <div class="feature">
+        <div class="feature__media reveal">
+          <div class="photo-card photo-card--warm">
+            <div class="sticker">Auto-edited ✨</div>
+            <div class="edit-bubble">
+              <p>So um, I think we should <s>meet on</s> <mark>meet on</mark> Tuesday, no wait, <mark>Wednesday</mark> at like <mark>3pm</mark>? And I'll bring the uh <mark>Q3 report</mark>.</p>
+            </div>
+            <div class="edit-result">
+              <p>Let's meet on Wednesday at 3pm. I'll bring the Q3 report.</p>
+              <span class="send">↑</span>
+            </div>
+          </div>
+        </div>
+        <div class="feature__copy reveal">
+          <h3 class="display h3">AI Auto Edits</h3>
+          <p>Speak naturally and Flow transcribes and edits your voice instantly. Rambled thoughts become clear, perfectly formatted text, without the filler words or typos.</p>
+          <div class="row-actions">
+            <a href="#start" class="btn btn--outline btn--sm">Try Flow</a>
+            <a href="#start" class="btn btn--lilac btn--sm">Download for macOS</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dictionary + Snippets -->
+      <div class="feature-pair">
+        <div class="mini reveal">
+          <h3 class="display h3 center">Personal dictionary</h3>
+          <p class="center">Flow automatically learns your unique words and adds them to your personal dictionary.</p>
+          <div class="ui-card">
+            <div class="ui-card__head">Your Dictionary <span class="plus">+</span></div>
+            <ul class="dict" id="dictList">
+              <li>Saanvi</li>
+              <li>Kubernetes</li>
+              <li>Saoirse</li>
+              <li>Figma</li>
+              <li>Quokka</li>
+              <li>Anthropic</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mini mini--offset reveal">
+          <h3 class="display h3 center">Snippet library</h3>
+          <p class="center">Create voice shortcuts for the things you say most often — your calendar link, address, or a full email template.</p>
+          <div class="ui-card">
+            <div class="ui-card__head">Your Snippets <span class="plus">+</span></div>
+            <div class="snip">
+              <div class="snip__row"><span class="snip__key">"calendar"</span><span class="snip__val">cal.com/me/30min</span></div>
+              <div class="snip__row"><span class="snip__key">"address"</span><span class="snip__val">221B Baker Street, London</span></div>
+              <div class="snip__row"><span class="snip__key">"intro"</span><span class="snip__val">Hey! Great to meet you — looping in…</span></div>
+              <div class="snip__row"><span class="snip__key">"sig"</span><span class="snip__val">Best, Alex</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tones + Languages -->
+      <div class="feature-pair">
+        <div class="mini reveal">
+          <h3 class="display h3 center">Different tones <br>for each app</h3>
+          <p class="center">Flow adapts your tone to the app you're in — formal for email, casual for messages, and precise for work.</p>
+          <div class="ui-card ui-card--dark tones">
+            <div class="tones__bubble" id="toneOut">Hey team, quick update: launch is on track for Friday.</div>
+            <svg class="tones__lines" viewBox="0 0 300 80" aria-hidden="true">
+              <path d="M150 0 V30 M150 30 C150 50, 60 40, 60 80 M150 30 V80 M150 30 C150 50, 240 40, 240 80" stroke="#6b6b6b" stroke-width="2" fill="none"/>
+            </svg>
+            <div class="tones__apps">
+              <button class="tone is-active" data-tone="Hey team, quick update: launch is on track for Friday."><span class="app-ico" style="background:#4b8bf5">✉️</span>Formal</button>
+              <button class="tone" data-tone="yo! launch still on for fri 🚀"><span class="app-ico" style="background:#57c26b">💬</span>Casual</button>
+              <button class="tone" data-tone="Launch: on track. Target: Friday. Blockers: none."><span class="app-ico" style="background:#f6c445">📝</span>Very</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mini mini--offset reveal">
+          <h3 class="display h3 center">100+ languages</h3>
+          <p class="center">Flow automatically detects and transcribes in your language, letting you switch seamlessly between them.</p>
+          <div class="ui-card ui-card--dark langs">
+            <div class="langs__ring" id="langRing"></div>
+            <span class="langs__label">100+ Languages</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ON THE GO ============ -->
+    <section class="go">
+      <div class="go__copy reveal">
+        <div class="tags">
+          <span class="tag"> iOS</span>
+          <span class="tag"> Mac</span>
+          <span class="tag">⊞ Windows</span>
+        </div>
+        <h2 class="display h2">On-the-go or at <br>your desk</h2>
+        <p>With apps for Desktop and iPhone, Flow freely moves wherever you go. Your personal dictionary and notes sync seamlessly between all of your devices.</p>
+        <a href="#start" class="btn btn--lilac btn--sm">Download for macOS</a>
+      </div>
+
+      <div class="go__devices reveal">
+        <div class="laptop">
+          <div class="laptop__screen">
+            <aside class="laptop__side">
+              <i></i><i></i><i></i><i></i><i></i>
+            </aside>
+            <div class="laptop__doc">
+              <h4>💡 Crazy product ideas</h4>
+              <p class="doc-sub">Product brainstorm</p>
+              <ul>
+                <li>Voice-first onboarding that asks what you do</li>
+                <li>Snippets shared across a whole team</li>
+                <li>"Rewrite this more politely" command</li>
+                <li>Weekly recap of everything you dictated</li>
+              </ul>
+              <p class="doc-note">Note to self: talk to design about the waveform animation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="phone phone--small">
+          <div class="phone__notch"></div>
+          <p class="phone__note">Grab oat milk, call mom back, and book flights for the 14th.</p>
+          <div class="phone__wave">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="dark-card love">
+      <h2 class="display h1 light center reveal">Love letters <br><em>to Flow</em></h2>
+
+      <div class="marquee marquee--cards">
+        <div class="marquee__track marquee__track--slow" id="loveTrack">
+          <article class="t-card">
+            <p>"This is a complete game-changer. I write all my Slack messages and emails with Flow now and I'm never going back."</p>
+            <footer><div class="avatar" style="--h:200"></div><div><b>Priya N.</b><span>Product Manager</span></div></footer>
+          </article>
+          <article class="t-card">
+            <p>"I was able to dictate 70% of my CS-based documentation with Flow. It was a massive time saver."</p>
+            <footer><div class="avatar" style="--h:30"></div><div><b>Jeff M.</b><span>Staff Engineer</span></div></footer>
+          </article>
+          <article class="t-card">
+            <p>"Flow is the most effective piece of software I've ever used. It helps me get my thoughts out and the AI edits make me sound sharper than I am."</p>
+            <footer><div class="avatar" style="--h:140"></div><div><b>Sam O.</b><span>Founder</span></div></footer>
+          </article>
+          <article class="t-card">
+            <p>"Stuttering and it still works really well. I didn't think that was possible with voice software."</p>
+            <footer><div class="avatar" style="--h:320"></div><div><b>Luis R.</b><span>Designer</span></div></footer>
+          </article>
+          <article class="t-card">
+            <p>"My wrists thank me every day. I can work full days again without the pain."</p>
+            <footer><div class="avatar" style="--h:260"></div><div><b>Hana K.</b><span>Writer</span></div></footer>
+          </article>
+        </div>
+      </div>
+
+      <div class="stats">
+        <a class="stat reveal" href="#start">
+          <h3 class="display">4x faster responses</h3>
+          <p>"The 'no-brainer' tool" — and I've tried them all.</p>
+          <footer><div class="avatar avatar--sm" style="--h:50"></div><div><b>Marcus Chen</b><span>Head of Customer Success</span></div></footer>
+          <span class="stat__arrow">↗</span>
+        </a>
+        <a class="stat reveal" href="#start">
+          <h3 class="display">50+ hours saved</h3>
+          <p>Before Flow, writing was a bottleneck. Now it's a conversation.</p>
+          <footer><div class="avatar avatar--sm" style="--h:300"></div><div><b>Greg Walton</b><span>Sales Director</span></div></footer>
+          <span class="stat__arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ START FLOWING ============ -->
+    <section class="start" id="start">
+      <div class="start__sky" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="hills hills--back"></div>
+        <div class="hills hills--front"></div>
+        <div class="grass"></div>
+      </div>
+      <div class="start__content reveal">
+        <h2 class="display h1 light">Start <em>flowing</em></h2>
+        <p>Effortless voice dictation in every application. Flow makes typing feel slow and gets out of your way.</p>
+        <div class="center-actions">
+          <a href="#top" class="btn btn--cream btn--sm">Try Flow</a>
+          <a href="#top" class="btn btn--lilac btn--sm">Download for macOS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="footer">
+    <div class="footer__cols">
+      <div>
+        <h5 class="display">Company</h5>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Trust Center</a>
+        <a href="#">Become an Affiliate</a>
+      </div>
+      <div>
+        <h5 class="display">Product</h5>
+        <a href="#">What's New</a>
+        <a href="#">Use Cases</a>
+        <a href="#">Flow for Teams</a>
+        <a href="#">Flow for Students</a>
+      </div>
+      <div>
+        <h5 class="display">Resources</h5>
+        <a href="#">Manifesto</a>
+        <a href="#">Data Controls</a>
+        <a href="#">Get Support</a>
+        <a href="#">Privacy</a>
+        <a href="#">Help Center</a>
+      </div>
+    </div>
+
+    <div class="footer__brand" aria-hidden="true">
+      <span class="footer__dots"><i></i><i></i><i></i><i></i></span>
+      <span class="footer__word">Flow</span>
+    </div>
+
+    <div class="footer__bar">
+      <span>© Flow Clone <span id="year"></span> · <a href="#">Terms</a> · <a href="#">Privacy</a> · <a href="../index.html">Back to portfolio</a></span>
+      <span class="socials">
+        <a href="#" aria-label="X">𝕏</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Instagram">◎</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="./flow.js"></script>
+</body>
+
+</html>
