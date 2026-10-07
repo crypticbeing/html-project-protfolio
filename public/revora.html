@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revora – A new standard for insurance collections</title>
+  <meta name="description" content="Animated landing page for an AI-native insurance claims collections platform, built with HTML, CSS and JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@400;500;600&family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./revora.css">
+</head>
+
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="logo" aria-label="Revora home">
+        <span class="logo__mark" aria-hidden="true"></span>revora
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#how">Solutions</a>
+        <a href="#rules">Who We Serve</a>
+        <a href="#ai">AI</a>
+        <a href="#story">About Us</a>
+        <a href="#platform">Blog</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="#cta" class="nav__login">Log in</a>
+        <button class="btn btn--light btn--sm magnetic" data-demo>Request a demo</button>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="orb orb--1"></span>
+        <span class="orb orb--2"></span>
+        <span class="orb orb--3"></span>
+        <div class="hero__grain"></div>
+      </div>
+
+      <div class="hero__portrait" aria-hidden="true" id="heroPortrait">
+        <div class="portrait">
+          <span class="portrait__hair"></span>
+          <span class="portrait__head"></span>
+          <span class="portrait__glasses"></span>
+          <span class="portrait__body"></span>
+        </div>
+        <div class="float-card float-card--a">
+          <span class="dot dot--green"></span> Claim #48213 paid
+          <b>$12,480</b>
+        </div>
+        <div class="float-card float-card--b">
+          <span class="spark"></span> Appeal drafted by AI
+          <small>2s ago</small>
+        </div>
+        <div class="float-card float-card--c">
+          <div class="mini-ring"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15" /><circle class="mini-ring__bar" cx="18" cy="18" r="15" /></svg><span>92%</span></div>
+          Recovery rate
+        </div>
+      </div>
+
+      <div class="container hero__content">
+        <a href="#how" class="pill reveal">
+          <span class="pill__tag">News</span>
+          Revora raises Series A to reinvent claim collections <span class="arrow">→</span>
+        </a>
+        <h1 class="hero__title">
+          <span class="line"><span>A new standard for</span></span>
+          <span class="line"><span>insurance <em class="rotator" id="rotator"><span class="is-active">collections</span><span>appeals</span><span>follow-ups</span><span>denials</span></em></span></span>
+        </h1>
+        <p class="hero__sub reveal" style="--d:.4s">Revora uses agentic AI and in-house revenue cycle experts to recover the dollars your team doesn't have time to chase. Faster, smarter, and fully managed.</p>
+        <div class="hero__ctas reveal" style="--d:.55s">
+          <button class="btn btn--light magnetic" data-demo>Request a demo</button>
+          <a href="#how" class="btn btn--ghost magnetic">See how it works</a>
+        </div>
+      </div>
+
+      <div class="container hero__logos">
+        <p>Trusted by leading healthcare<br>providers and billing teams</p>
+        <div class="marquee" aria-label="Customer logos">
+          <div class="marquee__track">
+            <span>tend</span><span>◎ LUMINA</span><span>Heartline</span><span>OPTIVA</span><span>▲ Northwell+</span><span>Brightr</span><span>Kinship</span><span>MEDIX</span>
+            <span aria-hidden="true">tend</span><span aria-hidden="true">◎ LUMINA</span><span aria-hidden="true">Heartline</span><span aria-hidden="true">OPTIVA</span><span aria-hidden="true">▲ Northwell+</span><span aria-hidden="true">Brightr</span><span aria-hidden="true">Kinship</span><span aria-hidden="true">MEDIX</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW: STICKY STEPS ============ -->
+    <section class="how dark" id="how">
+      <div class="container">
+        <h2 class="display reveal">Revora works your<br>claims end-to-end, from<br>submission to payment</h2>
+      </div>
+
+      <div class="container how__grid">
+        <div class="how__steps">
+          <article class="step" data-step="0">
+            <span class="eyebrow">01 · Full-service collections</span>
+            <h3>Outsource your insurance collections, from start to finish</h3>
+            <p>Revora manages AR from first touch to final payment, working every claim so nothing slips through the cracks.</p>
+            <a href="#cta" class="link-arrow">Learn more <span>→</span></a>
+          </article>
+          <article class="step" data-step="1">
+            <span class="eyebrow">02 · Automation</span>
+            <h3>Offload repetitive payer workflows</h3>
+            <p>Status checks, portal logins, phone trees and resubmissions — our AI agents handle them around the clock.</p>
+          </article>
+          <article class="step" data-step="2">
+            <span class="eyebrow">03 · Expertise</span>
+            <h3>Bring expertise to the hardest claims</h3>
+            <p>A combination of AI prioritization and a team of revenue cycle specialists who know every payer's quirks.</p>
+          </article>
+          <article class="step" data-step="3">
+            <span class="eyebrow">04 · Flexible</span>
+            <h3>Adapt collections to your organization</h3>
+            <p>Your team keeps visibility and control. Plug in where you need help and let Revora fill the gaps.</p>
+          </article>
+        </div>
+
+        <div class="how__stage" aria-hidden="true">
+          <div class="stage">
+            <!-- Scene 0 -->
+            <div class="scene is-active" data-scene="0">
+              <div class="flow-list">
+                <div class="flow-item"><span class="ico-box">✓</span><div><b>Submitted</b><small>Claim sent to Aetna</small></div></div>
+                <div class="flow-item"><span class="ico-box">↻</span><div><b>Status check</b><small>Pending · 14 days</small></div></div>
+                <div class="flow-item"><span class="ico-box">✎</span><div><b>Appeal filed</b><small>Medical necessity</small></div></div>
+                <div class="flow-item flow-item--paid"><span class="ico-box">$</span><div><b>Paid</b><small>$4,120 recovered</small></div></div>
+              </div>
+            </div>
+            <!-- Scene 1 -->
+            <div class="scene" data-scene="1">
+              <div class="chat">
+                <div class="chat__bubble chat__bubble--user"><span class="avatar">AI</span><div><b>Revora agent</b><small>Calling payer line…</small></div><span class="tag">Live</span></div>
+                <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="chat__row"><span class="chip">CLM-88214</span><span class="chip chip--ok">Resolved automatically</span></div>
+              </div>
+            </div>
+            <!-- Scene 2 -->
+            <div class="scene" data-scene="2">
+              <div class="stat-card">
+                <small>Recovered denials</small>
+                <div class="stat-card__num"><span class="count" data-to="92">0</span>%<em>+18%</em></div>
+                <small>Resolution rate on escalated claims</small>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+            <!-- Scene 3 -->
+            <div class="scene" data-scene="3">
+              <div class="toggles">
+                <label class="toggle-row"><span>Payer follow-ups</span><input type="checkbox" checked><i></i></label>
+                <label class="toggle-row"><span>Denial appeals</span><input type="checkbox" checked><i></i></label>
+                <label class="toggle-row"><span>Patient eligibility</span><input type="checkbox"><i></i></label>
+                <label class="toggle-row"><span>Underpayment review</span><input type="checkbox" checked><i></i></label>
+              </div>
+            </div>
+          </div>
+          <div class="stage__dots"><i class="is-active"></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RULES ============ -->
+    <section class="rules" id="rules">
+      <div class="container">
+        <h2 class="display display--ink reveal">The rules of<br>revenue cycle,<br>rewritten</h2>
+        <div class="rules__grid">
+          <div class="rules__stat reveal">
+            <div class="big-num"><span class="count" data-to="500">0</span>K+</div>
+            <p>Claims recovered across leading healthcare providers</p>
+            <div class="rules__nav">
+              <button class="circle-btn" id="rulesPrev" aria-label="Previous">←</button>
+              <button class="circle-btn" id="rulesNext" aria-label="Next">→</button>
+            </div>
+          </div>
+          <div class="slider" id="slider">
+            <div class="slider__track" id="sliderTrack">
+              <article class="rule-card tilt">
+                <div class="rule-card__art"><span class="art-coin"></span><span class="art-coin art-coin--2"></span></div>
+                <h4>Recover more revenue</h4>
+                <p>Identify and pursue high-value claims that traditional workflows leave untouched.</p>
+              </article>
+              <article class="rule-card tilt">
+                <div class="rule-card__art"><span class="art-plane">✈</span></div>
+                <h4>Reduce AR backlogs</h4>
+                <p>Keep things moving with prioritized follow-ups, automated status checks, and AI agents.</p>
+              </article>
+              <article class="rule-card tilt">
+                <div class="rule-card__art"><span class="art-clock"><i></i></span></div>
+                <h4>Get paid faster</h4>
+                <p>Cut days in AR with relentless, intelligent follow-up on every open claim.</p>
+              </article>
+              <article class="rule-card tilt">
+                <div class="rule-card__art"><span class="art-stack"><i></i><i></i><i></i></span></div>
+                <h4>Free up your team</h4>
+                <p>Let staff focus on patients while Revora takes on payer busywork.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="slider__dots" id="sliderDots"></div>
+      </div>
+    </section>
+
+    <!-- ============ STORY / TESTIMONIAL ============ -->
+    <section class="story" id="story">
+      <div class="container story__grid">
+        <div class="story__text reveal">
+          <div class="story__logo">◆ NORTHFIELD<br><small>Health Partners</small></div>
+          <blockquote>
+            “Our goal is simple: remove friction from the revenue cycle so our teams can more efficiently chase revenue, with resources spent focusing on patient care and growth.”
+          </blockquote>
+          <div class="signature">
+            <svg viewBox="0 0 220 60" aria-hidden="true"><path d="M8 40 C 20 10, 34 10, 30 38 S 48 50, 58 28 C 64 18, 70 46, 80 34 C 88 24, 92 40, 100 36 M110 20 C 104 50, 120 50, 126 30 C 130 20, 140 46, 150 34 C 160 22, 170 44, 180 30 S 200 26, 212 34" /></svg>
+            <span>Daniel Whitmore, CFO · Northfield Health Partners</span>
+          </div>
+          <a href="#cta" class="btn btn--outline magnetic">Read their story</a>
+        </div>
+        <div class="story__photo reveal" style="--d:.15s">
+          <div class="photo-man">
+            <span class="pm__hair"></span><span class="pm__head"></span><span class="pm__body"></span>
+          </div>
+          <div class="photo-tag"><span class="dot dot--green"></span>38% fewer days in AR</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI-NATIVE ============ -->
+    <section class="ai" id="ai">
+      <div class="container">
+        <h2 class="fill-text" id="fillText">AI-native collections backed by RCM experts</h2>
+        <span class="coin coin--1" data-speed="0.25"></span>
+        <span class="coin coin--2" data-speed="-0.18"></span>
+        <span class="coin coin--3" data-speed="0.4"></span>
+      </div>
+
+      <div class="container ai__grid">
+        <div class="ai__tabs">
+          <button class="ai-tab is-active" data-tab="0"><h3>Collections that keep moving</h3></button>
+          <button class="ai-tab" data-tab="1"><h3>Complete visibility</h3></button>
+          <button class="ai-tab" data-tab="2"><h3>Expert escalation</h3></button>
+        </div>
+
+        <div class="ai__visual">
+          <div class="ai__blob"></div>
+          <div class="person-card">
+            <div class="pc__hair"></div><div class="pc__head"></div><div class="pc__body"></div>
+          </div>
+          <div class="claim-panel" id="claimPanel">
+            <div class="claim-panel__head"><span>Claim Details</span><span class="chip chip--ok" id="claimStatus">In progress</span></div>
+            <div class="claim-panel__row"><small>Payer</small><b id="claimPayer">BlueCross</b></div>
+            <div class="claim-panel__row"><small>Next action</small><b id="claimAction">Follow-up call</b></div>
+            <div class="claim-panel__foot"><span class="logo__mark logo__mark--sm"></span> Recovered <b class="claim-amt" id="claimAmt">$28,108.00</b></div>
+          </div>
+        </div>
+
+        <p class="ai__desc" id="aiDesc">Revora's AI works every claim in parallel — no queue left to age, no follow-up forgotten. Your collections never stall.</p>
+      </div>
+    </section>
+
+    <!-- ============ CLAIMS KEEP MOVING ============ -->
+    <section class="moving dark">
+      <div class="container moving__grid">
+        <div>
+          <h2 class="display reveal">What if claims<br>actually kept moving?</h2>
+          <div class="accordion" id="accordion">
+            <div class="acc is-open">
+              <button class="acc__head"><span class="acc__num">01</span> Connect</button>
+              <div class="acc__body"><p>Revora plugs into your existing practice management and EHR systems in days, not months.</p><span class="acc__bar"></span></div>
+            </div>
+            <div class="acc">
+              <button class="acc__head"><span class="acc__num">02</span> Prioritize</button>
+              <div class="acc__body"><p>Every open claim is scored by value, age and likelihood to pay, so effort goes where it matters.</p><span class="acc__bar"></span></div>
+            </div>
+            <div class="acc">
+              <button class="acc__head"><span class="acc__num">03</span> Work</button>
+              <div class="acc__body"><p>AI agents and RCM experts follow up, appeal and resubmit — continuously.</p><span class="acc__bar"></span></div>
+            </div>
+            <div class="acc">
+              <button class="acc__head"><span class="acc__num">04</span> Recover</button>
+              <div class="acc__body"><p>Payments post back to your system automatically, with full audit trails.</p><span class="acc__bar"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack" id="stack" aria-hidden="true">
+          <div class="stack__card"><b>Outstanding AR</b><small>$2.4M across 1,203 claims</small><span class="pulse-dot"></span></div>
+          <div class="stack__card"><b>837 Transactions</b><small>Synced 12 seconds ago</small><span class="pulse-dot"></span></div>
+          <div class="stack__card"><b>835/ERA Remittance</b><small>Auto-posted · 312 today</small><span class="pulse-dot"></span></div>
+          <div class="stack__card"><b>Payment Files</b><small>Reconciled to the penny</small><span class="pulse-dot"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PLATFORM BENTO ============ -->
+    <section class="platform" id="platform">
+      <div class="container">
+        <h2 class="display display--ink center reveal">Where claims get organized,<br>prioritized, and progressed</h2>
+
+        <div class="dash reveal" id="dash">
+          <div class="dash__head">
+            <div><span class="logo__mark logo__mark--sm"></span><b>Revenue Insights</b><small>Updated live · All payers</small></div>
+            <div class="seg" id="seg"><button class="is-active" data-range="30">30D</button><button data-range="90">90D</button><button data-range="365">1Y</button></div>
+          </div>
+          <div class="dash__kpis">
+            <div><small>Total collected</small><b>$<span class="kpi" data-base="1.26">1.26</span>M</b></div>
+            <div><small>Claims worked</small><b><span class="kpi" data-base="5776" data-int>5,776</span></b></div>
+            <div><small>Avg days to pay</small><b><span class="kpi" data-base="18" data-int>18</span></b></div>
+            <div><small>Denial rate</small><b><span class="kpi" data-base="13" data-int>13</span>%</b></div>
+          </div>
+          <div class="dash__chart" id="chart"></div>
+        </div>
+
+        <div class="bento">
+          <div class="bento__item reveal">
+            <div class="bento__visual">
+              <div class="hbars">
+                <div><small>Commercial</small><span style="--w:82%"></span></div>
+                <div><small>Medicare</small><span style="--w:64%"></span></div>
+                <div><small>Medicaid</small><span style="--w:47%"></span></div>
+                <div><small>Workers comp</small><span style="--w:29%"></span></div>
+              </div>
+            </div>
+            <h4>Intelligence &amp; insights</h4>
+            <p>Analyze payer patterns and denial trends to spot problems before they become write-offs.</p>
+          </div>
+          <div class="bento__item reveal" style="--d:.1s">
+            <div class="bento__visual">
+              <table class="wq">
+                <thead><tr><th>Claim</th><th>Payer</th><th>Age</th><th>Amount</th></tr></thead>
+                <tbody id="wqBody"></tbody>
+              </table>
+            </div>
+            <h4>Structured workqueues</h4>
+            <p>Claims are automatically categorized and prioritized so the highest-value work happens first.</p>
+          </div>
+          <div class="bento__item reveal" style="--d:.2s">
+            <div class="bento__visual bento__visual--split">
+              <div class="mini-kpi"><small>835 remits</small><b>$<span class="count" data-to="842">0</span>K</b></div>
+              <div class="mini-kpi"><small>Posted</small><b><span class="count" data-to="99">0</span>%</b></div>
+              <div class="mini-kpi"><small>Variance</small><b>$0</b></div>
+            </div>
+            <h4>Unified financial data</h4>
+            <p>Revora reconciles claims, payer transactions and remittances into a single view.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTEGRATIONS ============ -->
+    <section class="integrations">
+      <div class="container">
+        <div class="integrations__box dark reveal">
+          <h2 class="display">Works alongside your<br>everyday workflows</h2>
+          <div class="integrations__row" id="integrations">
+            <div class="int-tile"><span>ep</span><small>Epic</small></div>
+            <div class="int-tile"><span>ah</span><small>athenahealth</small></div>
+            <div class="int-tile"><span>✚</span><small>NextGen</small></div>
+            <div class="int-tile"><span>⬢</span><small>Availity</small></div>
+            <div class="int-tile"><span>◈</span><small>Waystar</small></div>
+            <div class="int-tile"><span>☁</span><small>Cerner</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" id="cta">
+      <div class="container">
+        <h2 class="display display--ink reveal">Start recovering more revenue<br>from insurance claims</h2>
+        <div class="hero__ctas reveal" style="--d:.15s">
+          <button class="btn btn--dark magnetic" data-demo>Request a demo</button>
+          <a href="#platform" class="btn btn--outline magnetic">Download the PDF</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#top" class="logo logo--ink"><span class="logo__mark"></span>revora</a>
+        <div class="footer__cols">
+          <div><h5>Solutions</h5><a href="#how">End-to-End Collections</a><a href="#how">Automation</a></div>
+          <div><h5>Specialties</h5><a href="#rules">Orthopedics</a><a href="#rules">Behavioral Health</a><a href="#rules">Cardiology</a><a href="#rules">Radiology</a><a href="#rules">Oncology</a></div>
+          <div><h5>Who We Serve</h5><a href="#rules">Providers</a><a href="#rules">Billing Companies</a><a href="#rules">Health Systems</a></div>
+          <div><h5>Company</h5><a href="#story">About Us</a><a href="#story">Careers</a><a href="#cta">Contact</a></div>
+          <div><h5>Resources</h5><a href="#platform">Blog</a><a href="#platform">ROI Calculator</a></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="badges"><span>HIPAA</span><span>SOC 2</span></div>
+        <small>© 2026 Revora. A portfolio concept project. <a href="../index.html">Back to portfolio</a></small>
+        <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+      </div>
+      <div class="footer__word" aria-hidden="true">revora</div>
+    </div>
+  </footer>
+
+  <!-- ============ DEMO MODAL ============ -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <button class="modal__close" data-close aria-label="Close">✕</button>
+      <h3 id="modalTitle">Request a demo</h3>
+      <p>See how much revenue Revora can recover for you.</p>
+      <form id="demoForm">
+        <label>Full name<input required name="name" placeholder="Jane Doe"></label>
+        <label>Work email<input required type="email" name="email" placeholder="jane@clinic.com"></label>
+        <label>Monthly claim volume
+          <input type="range" min="100" max="20000" step="100" value="2000" id="volume">
+          <span class="range-out">≈ <b id="volumeOut">2,000</b> claims · est. <b id="recoverOut">$96,000</b>/mo recovered</span>
+        </label>
+        <button class="btn btn--dark" type="submit">Book my demo</button>
+      </form>
+      <div class="modal__done" id="modalDone" hidden>
+        <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" /><path d="M14 27l8 8 16-17" /></svg>
+        <h3>You're on the list!</h3>
+        <p>We'll be in touch within one business day.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./revora.js"></script>
+</body>
+
+</html>
